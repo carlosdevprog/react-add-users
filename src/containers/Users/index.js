@@ -18,7 +18,7 @@ function Users() {
   useEffect(() => {
     async function fetchUsers() {
 
-      const { data: newUsers } = await axios.get("http://localhost:3001/users")
+      const { data: newUsers } = await axios.get("https://api-add-users.netlify.app")
 
       setUsers(newUsers)
     }
