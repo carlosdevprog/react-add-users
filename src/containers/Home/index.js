@@ -16,7 +16,7 @@ function App() {
   const history = useHistory()
 
   async function addNewUser() {
-    const { data: newUser } = await axios.post("http://localhost:3001/users", {
+    const { data: newUser } = await axios.post("https://api-add-users.netlify.app", {
       name: InputName.current.value,
       age: InputAge.current.value
     });
