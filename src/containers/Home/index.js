@@ -16,7 +16,7 @@ function App() {
   const history = useHistory()
 
   async function addNewUser() {
-    const { data: newUser } = await axios.post("https://api-add-users.netlify.app", {
+    const { data: newUser } = await axios.post("https://git.heroku.com/api-add-users-age.git", {
       name: InputName.current.value,
       age: InputAge.current.value
     });
