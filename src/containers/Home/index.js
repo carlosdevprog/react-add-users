@@ -16,10 +16,14 @@ function App() {
   const history = useHistory()
 
   async function addNewUser() {
-    const { data: newUser } = await axios.post("https://git.heroku.com/api-add-users-age.git", {
+    const { data: newUser } = await axios.post("http://localhost:3001/users", {
       name: InputName.current.value,
       age: InputAge.current.value
+
+      
     });
+
+    console.log(newUser)
 
     setUsers([...users, newUser])
 

@@ -18,7 +18,7 @@ function Users() {
   useEffect(() => {
     async function fetchUsers() {
 
-      const { data: newUsers } = await axios.get("https://git.heroku.com/api-add-users-age.git")
+      const { data: newUsers } = await axios.get("http://localhost:3001/users")
 
       setUsers(newUsers)
     }
